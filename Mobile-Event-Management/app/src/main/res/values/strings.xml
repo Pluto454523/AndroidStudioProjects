@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Event Management Application</string>
+    <string name="onClick2">buttonOnClick2</string>
+    <string name="onClick5">buttonOnClick5</string>
+</resources>
