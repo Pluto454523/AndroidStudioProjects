@@ -13,5 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Exercise 4_1 S6406021630039"
+rootProject.name = "Exercise4_1S6406021630039"
 include(":app")
+ 

@@ -2,6 +2,7 @@ package com.example.appspinnerimageview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
@@ -41,8 +42,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         btnSave.setOnClickListener(this);
 
         spinner2 = (Spinner) findViewById(R.id.spinner2);
-        ArrayAdapter<String> pictures = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, names);
+        ArrayAdapter<String> pictures = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, names);
         spinner2.setAdapter(pictures);
         spinner2.setOnItemSelectedListener(this);
 
@@ -63,12 +63,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         }
         else if (viewId == R.id.btnView) {
-            if (pos2 == 0)
-                display.setImageResource(R.drawable.deosai_land);
-            else if (pos2 == 1)
-                display.setImageResource(R.drawable.dudipatsar_lake);
-            else if (pos2 == 2)
-                display.setImageResource(R.drawable.rama_lake);
+            Resources resources = getResources();
+            String imageName = names[pos2];
+            int imageId = resources.getIdentifier(imageName, "drawable", getPackageName());
+            display.setImageResource(imageId);
+
+//            if (pos2 == 0)
+//                display.setImageResource(R.drawable.deosai_land);
+//            else if (pos2 == 1)
+//                display.setImageResource(R.drawable.dudipatsar_lake);
+//            else if (pos2 == 2)
+//                display.setImageResource(R.drawable.rama_lake);
+
             message = "Picture : " + spinner2.getItemAtPosition(pos2);
             Toast.makeText(this, "You select : " + names[pos2], Toast.LENGTH_SHORT).show();
 
