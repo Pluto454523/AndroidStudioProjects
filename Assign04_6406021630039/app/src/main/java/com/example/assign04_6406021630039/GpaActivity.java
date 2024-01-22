@@ -40,20 +40,26 @@ public class GpaActivity extends AppCompatActivity implements View.OnClickListen
         int viewId = v.getId();
         if (viewId == R.id.btnCalGpa) {
 
-            String strGrade1 = inputGrade1.getText().toString();
-            String strGrade2 = inputGrade2.getText().toString();
-            String strGrade3 = inputGrade3.getText().toString();
-            String strGrade4 = inputGrade4.getText().toString();
+            String[] strGrade = new String[4];
+            strGrade[0] = inputGrade1.getText().toString();
+            strGrade[1] = inputGrade2.getText().toString();
+            strGrade[2] = inputGrade3.getText().toString();
+            strGrade[3] = inputGrade4.getText().toString();
 
-            if (strGrade1.isEmpty() || strGrade2.isEmpty() || strGrade3.isEmpty() || strGrade4.isEmpty()) {
-                Toast.makeText(this, "Please input your grade.", Toast.LENGTH_SHORT).show();
-            } else {
-                double point = 3 * (convertGrade(strGrade1) + convertGrade(strGrade2) + convertGrade(strGrade3) + convertGrade(strGrade4));
-                textPoint.setText(String.format("%.2f", point) + "");
-                textCredit.setText("12.00");
-                double gpa = point / 12;
-                textGpa.setText(String.format("%.2f", gpa) + "");
+            double point = 0;
+            for (int i = 0; i < strGrade.length; i++) {
+                if (strGrade[i].isEmpty()) {
+                    Toast.makeText(this, "Please input your grade in field " + i, Toast.LENGTH_SHORT).show();
+                    break;
+                }
+                point += 3 * convertGrade(strGrade[i]);
+                if (i == strGrade.length-1) {
+                    textPoint.setText(String.format("%.2f", point) + "");
+                    textCredit.setText(String.format("%.2f", 12) + "");
+                    textGpa.setText(String.format("%.2f", point / 12) + "");
+                }
             }
+
         }
         if (viewId == R.id.btnGpaBack) {
             finish();

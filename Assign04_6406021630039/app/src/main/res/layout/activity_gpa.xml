@@ -113,21 +113,25 @@
             android:id="@+id/btnCalGpa"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:backgroundTint="#C8C8C8"
             android:text="CAL Vat"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
 
         <Button
             android:id="@+id/btnGpaBack"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:backgroundTint="#C8C8C8"
             android:text="BACK"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
     </LinearLayout>
 
     <TextView
