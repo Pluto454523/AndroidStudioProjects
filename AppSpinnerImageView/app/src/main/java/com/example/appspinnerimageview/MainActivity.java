@@ -19,9 +19,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "Thailand", "U.A.E", "Yemen", "Palestine",
             "America", "Australia", "Turkey", "England",
             "France", "Greece"};
-    private String [] names = {
-
-            "deosai_land", "dudipatsar_lake","rama_lake"};
+    private String [] names = {"deosai_land", "dudipatsar_lake","rama_lake"};
     private ImageView display;
 
     private Spinner spinner1, spinner2;

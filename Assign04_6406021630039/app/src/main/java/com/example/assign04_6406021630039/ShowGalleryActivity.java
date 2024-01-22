@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+
 public class ShowGalleryActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton btnLufy, btnNami, btnSanji, btnUsop, btnSolo, btnShank, btnCoby, btnMihawk;
