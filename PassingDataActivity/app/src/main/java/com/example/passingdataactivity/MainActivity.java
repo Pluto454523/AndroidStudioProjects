@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // passing information to launched activity
         score = Integer.parseInt(textScore.getText().toString());
         playerName = textName.getText().toString();
-        launchGame.putExtra("score", score);
+        launchGame.putExtra("score", score); // parameter 1("score") must be equal 2(score)
         launchGame.putExtra("playerName", playerName);
         startActivityForResult(launchGame, PLAY_GAME);
     }
