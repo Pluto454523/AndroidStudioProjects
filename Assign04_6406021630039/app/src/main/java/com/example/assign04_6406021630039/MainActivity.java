@@ -7,15 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+// คลาส MainActivity สืบทอดจาก AppCompatActivity
+// และ implement View.OnClickListener เพื่อจัดการกับการ Click ของ Button
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    // ประกาศตัวแปรชนิด Button
     private Button btnMenuCalGrade , btnMenuCalVat, btnMenuCalGpa, btnMenuShowGallery, btnMenuExit;
 
 
+    // เมธอด onCreate เรียกใช้เมื่อ activity เริ่มต้นทำงาน
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // ส่วนนี้จะทำการ assign ค่า id ของแต่ละตัวแปรโดยใช้ findViewById เพื่อค้นหา id
+        // และยังมีการ setOnClickListener ไปยัง onClick ภายในคลาสเพื่อจัดการกับการ Click
         btnMenuCalGrade = (Button) findViewById(R.id.btnMenuCalGrade);
         btnMenuCalGrade.setOnClickListener(this);
         btnMenuCalVat = (Button) findViewById(R.id.btnMenuCalVat);
@@ -28,8 +35,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnMenuExit.setOnClickListener(this);
     }
 
+    //เรียกใช้เมื่อมีการ Click ของ Button
     @Override
     public void onClick(View v) {
+        // โดยมีการรับค่า v และนำมา id จาก v มาเก็บในตัวแปร viewId
+        // เพื่อใข้ในการตรวจสอบ id ของ Button
+        // หากมีการกดปุ่มที่ตรงกับเงื่อนไขจะทำการ startActivity ไปยังหน้า activity ต่อๆไป
+        // โดยการ startActivity จะมี parameter ชนิด intent
+        // ซึ่งเราจะ new ขึ้นมาตาม activirt class ที่เราต้องการจะไป
         int viewId = v.getId();
         if (viewId == R.id.btnMenuCalGrade) {
             Intent intent1 = new Intent(this, GradeActivity.class);
