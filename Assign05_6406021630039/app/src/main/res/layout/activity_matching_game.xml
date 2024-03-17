@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchingGameActivity">
+
+    <TextView
+        android:id="@+id/titleMatchingGame"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="Matching Game"
+        android:textAlignment="center"
+        android:textColor="#FE4A4A"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCard_0"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleMatchingGame"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_1"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_0"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_2"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_1"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_3"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_2"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_4"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginTop="136dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleMatchingGame"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_5"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="136dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_0"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_6"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="136dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_1"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_7"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="136dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_2"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_8"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleMatchingGame"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_9"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_0"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_10"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_1"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_11"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_2"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_12"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleMatchingGame"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_13"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_0"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_14"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_1"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <ImageButton
+        android:id="@+id/btnCard_15"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnCard_2"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:srcCompat="@drawable/card_deck"
+        tools:srcCompat="@drawable/card_deck" />
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/titleScore"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/titleTime"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame" />
+
+    <TextView
+        android:id="@+id/titleScore"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:text="SCORE :"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/titleMatchingGame"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame" />
+
+    <TextView
+        android:id="@+id/titleTime"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="8dp"
+        android:text="TIME :"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/titleMatchingGame"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame" />
+
+    <Button
+        android:id="@+id/btnGameStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="464dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="onClick"
+        android:text="START"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMatchingGame"
+        app:strokeColor="#FF009A" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

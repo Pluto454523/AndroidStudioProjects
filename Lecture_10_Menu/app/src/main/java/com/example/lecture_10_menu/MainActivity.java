@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle("Main");
         finish();
-//        Intent screen = new Intent(this, OptionMenuActivity.class);
-        Intent screen = new Intent(this, ContextMenuActivity.class);
+        Intent screen = new Intent(this, OptionMenuActivity.class);
+//        Intent screen = new Intent(this, ContextMenuActivity.class);
 //        Intent screen = new Intent(this, PopupMenuActivity.class);
         startActivity(screen);
     }
