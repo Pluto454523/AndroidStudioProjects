@@ -27,12 +27,14 @@ public class MainActivity extends AppCompatActivity {
             // คำสั่งที่ต้องการวาด
             Paint p1 = new Paint();
             p1.setColor(Color.RED);
-            p1.setAlpha(255);
+            p1.setAlpha(255); // tranparen
             p1.setStyle(Paint.Style.FILL);
+
             Paint p2 = new Paint();
             p2.setColor(Color.GREEN);
             p2.setAlpha(255);
             p2.setStyle(Paint.Style.FILL);
+
             Paint p3 = new Paint();
             p3.setColor(Color.BLUE);
             p3.setAlpha(255);
@@ -46,14 +48,16 @@ public class MainActivity extends AppCompatActivity {
             // draw line
             canvas.drawLine(20, 400, 800, 400, p1);
             p2.setStrokeWidth(3);
-            canvas.drawLine(20, 450, 800, 450, p2);
+            canvas.drawLine(25, 450, 800, 450, p2);
             p3.setStrokeWidth(5);
-            canvas.drawLine(20, 500, 800, 500, p3);
+            canvas.drawLine(30, 500, 800, 500, p3);
 
             // draw circle
             p1.setAlpha(100);
             canvas.drawCircle(100, 750 , 50, p2);
             canvas.drawCircle(100, 750, 100, p1);
+
+            p3.setAlpha(50);
             canvas.drawCircle(500, 750 , 50, p3);
             canvas.drawCircle(500, 750, 100, p1);
         }
