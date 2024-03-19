@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.assign06_6406021630039_ufo"
-    compileSdk = 33
+    namespace = "com.example.assign06_6406021630039"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.assign06_6406021630039_ufo"
+        applicationId = "com.example.assign06_6406021630039"
         minSdk = 29
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

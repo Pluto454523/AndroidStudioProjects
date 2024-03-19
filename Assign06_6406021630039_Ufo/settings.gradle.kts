@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Assign06_6406021630039_Ufo"
+rootProject.name = "Assign06_6406021630039"
 include(":app")
  
