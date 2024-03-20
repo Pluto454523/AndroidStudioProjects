@@ -12,6 +12,8 @@ import android.os.CountDownTimer;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.example.assign06_6406021630039_ufo.R;
+
 import java.util.Random;
 
 public class GraphicsView extends View implements View.OnTouchListener {

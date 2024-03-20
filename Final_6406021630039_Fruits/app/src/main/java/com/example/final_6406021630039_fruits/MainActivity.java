@@ -1,18 +1,18 @@
-package com.example.lecture_9_container;
+package com.example.final_6406021630039_fruits;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        finish();
-        Intent screen = new Intent(this, ListViewActivity.class);
-        startActivity(screen);
+//        setContentView(R.layout.activity_main);
+        setContentView(new GraphicsView(this));
     }
+
 }
